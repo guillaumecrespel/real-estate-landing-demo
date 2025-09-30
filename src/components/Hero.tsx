@@ -1,7 +1,8 @@
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
-import { Star, Users, Home, Clock } from "lucide-react";
+import { Clock, Home, Star, Users } from "lucide-react";
+import { EstimateDialog } from "./EstimateDialog";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 
 export function Hero() {
   return (
@@ -25,9 +26,7 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200">
-                Demander une estimation
-              </Button>
+              <EstimateDialog />
               <Button variant="outline" size="lg" className="border-2 border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 rounded-lg transition-all duration-200">
                 Voir les biens en vente
               </Button>

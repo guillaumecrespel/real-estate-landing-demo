@@ -1,5 +1,5 @@
-import { Button } from "./ui/button";
-import { Phone, Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import { EstimateDialog } from "./EstimateDialog";
 
 export function Header() {
   return (
@@ -33,9 +33,7 @@ export function Header() {
               <span>julie@immobilier.fr</span>
             </div>
           </div>
-          <Button className="bg-accent hover:bg-accent/90">
-            Estimation gratuite
-          </Button>
+          <EstimateDialog />
         </div>
       </div>
     </header>

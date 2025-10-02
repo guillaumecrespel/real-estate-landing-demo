@@ -54,15 +54,10 @@ export function EstimateDialog() {
       <DrawerTrigger asChild>
         {triggerButton}
       </DrawerTrigger>
-      <DrawerContent className="bg-white h-[100vh]">
-        <div className="h-full p-4">
+      <DrawerContent className="bg-white h-[95vh]">
+        <div className="h-full">
           {iframeContent}
         </div>
-        <DrawerClose asChild>
-          <Button variant="outline" className="m-4">
-            Fermer
-          </Button>
-        </DrawerClose>
       </DrawerContent>
     </Drawer>
   )
